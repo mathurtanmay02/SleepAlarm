@@ -8,6 +8,9 @@ workflows:
       - name: Set up local properties
         script: |
           echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Generate Gradle wrapper
+        script: |
+          gradle wrapper --gradle-version 8.2
       - name: Make gradlew executable
         script: |
           chmod +x gradlew
