@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="😴 Sleep Alarm"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick your wake-up time and we'll\nset your bedtime alarm 9 hours early"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnPickTime"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Select Wake-Up Time"
+        android:textSize="16sp"
+        android:backgroundTint="#3700B3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E1E1E"
+        android:padding="20dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/tvWakeUpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wake-Up Time: --:--"
+            android:textSize="18sp"
+            android:textColor="#03DAC6"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm At:  --:--"
+            android:textSize="18sp"
+            android:textColor="#CF6679"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Set Alarm"
+        android:textSize="16sp"
+        android:backgroundTint="#018786"
+        android:textColor="#FFFFFF"
+        android:enabled="false"/>
+
+</LinearLayout>
